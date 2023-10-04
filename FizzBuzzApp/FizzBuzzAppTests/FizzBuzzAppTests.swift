@@ -27,63 +27,49 @@ final class FizzBuzzAppTests: XCTestCase {
 
     func test_printNumber_One() {
         
-        let sut = makeSUT()
-        
-        expect(sut: sut, number: 1, withResult: "1")
+        expect(number: 1, withResult: "1")
     }
     
     func test_printNumber_Two() {
         
-        let sut = FizzBuzzApp()
-        
-        expect(sut: sut, number: 2, withResult: "2")
+        expect(number: 2, withResult: "2")
     }
     
     func test_printFizz_forNumberThree() {
         
-        let sut = FizzBuzzApp()
-        
-        expect(sut: sut, number: 3, withResult: "Fizz")
+        expect(number: 3, withResult: "Fizz")
     }
     
     func test_printFizz_multipleForThree() {
         
-        let sut = FizzBuzzApp()
-        
         let multipleThree = [6, 9, 12]
         
         multipleThree.forEach { element in
-            expect(sut: sut, number: element, withResult: "Fizz")
+            expect(number: element, withResult: "Fizz")
         }
     }
     
     func test_printBuzz_forNumberFive() {
         
-        let sut = FizzBuzzApp()
-        
-        expect(sut: sut, number: 5, withResult: "Buzz")
+        expect(number: 5, withResult: "Buzz")
     
     }
     
     func test_printBuzz_multipleForFive() {
         
-        let sut = FizzBuzzApp()
-        
         let multipleFive = [10, 20, 25]
         
         multipleFive.forEach { elements in
-            expect(sut: sut, number: elements, withResult: "Buzz")
+            expect(number: elements, withResult: "Buzz")
         }
     }
     
     func test_printFizzBuzz_multipleOfThreeAndFive() {
         
-        let sut = FizzBuzzApp()
-        
         let multipleFifteen = [15, 30, 45]
         
         multipleFifteen.forEach { elements in
-            expect(sut: sut, number: elements, withResult: "FizzBuzz")
+            expect(number: elements, withResult: "FizzBuzz")
         }
     }
 
@@ -94,8 +80,9 @@ final class FizzBuzzAppTests: XCTestCase {
         return FizzBuzzApp()
     }
     
-    private func expect(sut: FizzBuzzApp, number: Int, withResult expectedResult: String, file: StaticString = #filePath, line: UInt = #line) {
+    private func expect(number: Int, withResult expectedResult: String, file: StaticString = #filePath, line: UInt = #line) {
         
+        let sut = makeSUT()
         let result = sut.print(number: number)
         
         XCTAssertEqual(result, expectedResult)
