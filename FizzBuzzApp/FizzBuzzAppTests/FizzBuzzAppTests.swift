@@ -12,6 +12,9 @@ class FizzBuzzApp {
     
     func print(number: Int) -> String {
         
+        if number == 3 {
+            return "Fizz"
+        }
         return "\(number)"
     }
 }
@@ -30,6 +33,15 @@ final class FizzBuzzAppTests: XCTestCase {
         let sut = FizzBuzzApp()
         
         expect(sut: sut, number: 2)
+    }
+    
+    func test_printNumber_Three() {
+        
+        let sut = FizzBuzzApp()
+        
+        let result = sut.print(number: 3)
+        
+        XCTAssertEqual(result, "Fizz")
     }
 
     
