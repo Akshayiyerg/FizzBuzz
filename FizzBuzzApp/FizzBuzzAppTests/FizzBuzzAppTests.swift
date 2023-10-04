@@ -14,7 +14,7 @@ class FizzBuzzApp {
         
         if number % 3 == 0 {
             return "Fizz"
-        } else if number == 5 {
+        } else if number % 5 == 0 {
             return "Buzz"
         }
         return "\(number)"
@@ -61,6 +61,17 @@ final class FizzBuzzAppTests: XCTestCase {
         
         expect(sut: sut, number: 5, withResult: "Buzz")
     
+    }
+    
+    func test_printBuzz_multipleForFive() {
+        
+        let sut = FizzBuzzApp()
+        
+        let multipleFive = [10, 20, 25]
+        
+        multipleFive.forEach { elements in
+            expect(sut: sut, number: elements, withResult: "Buzz")
+        }
     }
 
     
