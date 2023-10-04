@@ -14,6 +14,8 @@ class FizzBuzzApp {
         
         if number % 3 == 0 {
             return "Fizz"
+        } else if number == 5 {
+            return "Buzz"
         }
         return "\(number)"
     }
@@ -35,7 +37,7 @@ final class FizzBuzzAppTests: XCTestCase {
         expect(sut: sut, number: 2, withResult: "2")
     }
     
-    func test_printNumber_Three() {
+    func test_printFizz_forNumberThree() {
         
         let sut = FizzBuzzApp()
         
@@ -51,6 +53,14 @@ final class FizzBuzzAppTests: XCTestCase {
         multipleThree.forEach { element in
             expect(sut: sut, number: element, withResult: "Fizz")
         }
+    }
+    
+    func test_printBuzz_forNumberFive() {
+        
+        let sut = FizzBuzzApp()
+        
+        expect(sut: sut, number: 5, withResult: "Buzz")
+    
     }
 
     
