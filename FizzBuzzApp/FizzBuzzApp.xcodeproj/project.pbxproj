@@ -45,6 +45,7 @@
 		BAAD546A2ACDFC7000691816 /* FizzBuzzAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAAD546E2ACDFC7000691816 /* FizzBuzzAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzAppUITests.swift; sourceTree = "<group>"; };
 		BAAD54702ACDFC7000691816 /* FizzBuzzAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BAAD547D2ACDFECD00691816 /* FizzBuzzApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = FizzBuzzApp.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 		BAAD54462ACDFC6D00691816 = {
 			isa = PBXGroup;
 			children = (
+				BAAD547D2ACDFECD00691816 /* FizzBuzzApp.xctestplan */,
 				BAAD54512ACDFC6D00691816 /* FizzBuzzApp */,
 				BAAD54632ACDFC7000691816 /* FizzBuzzAppTests */,
 				BAAD546D2ACDFC7000691816 /* FizzBuzzAppUITests */,
