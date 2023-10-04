@@ -20,21 +20,29 @@ final class FizzBuzzAppTests: XCTestCase {
 
     func test_printNumber_One() {
         
-        let sut = FizzBuzzApp()
+        let sut = makeSUT()
         
-        let result = sut.print(number: 1)
-        
-        XCTAssertEqual(result, "1")
-        
+        expect(sut: sut, number: 1)
     }
     
     func test_printNumber_Two() {
         
         let sut = FizzBuzzApp()
         
-        let result = sut.print(number: 2)
-        
-        XCTAssertEqual(result, "2")
+        expect(sut: sut, number: 2)
     }
 
+    
+    // MARK: Helpers
+    
+    func makeSUT() -> FizzBuzzApp {
+        return FizzBuzzApp()
+    }
+    
+    func expect(sut: FizzBuzzApp, number: Int, file: StaticString = #filePath, line: UInt = #line) {
+        
+        let result = sut.print(number: number)
+        
+        XCTAssertEqual(result, "\(number)")
+    }
 }
