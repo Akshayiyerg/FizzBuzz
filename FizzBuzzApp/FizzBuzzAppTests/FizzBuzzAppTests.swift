@@ -12,7 +12,7 @@ class FizzBuzzApp {
     
     func print(number: Int) -> String {
         
-        return "1"
+        return "\(number)"
     }
 }
 
@@ -26,6 +26,15 @@ final class FizzBuzzAppTests: XCTestCase {
         
         XCTAssertEqual(result, "1")
         
+    }
+    
+    func test_printNumber_Two() {
+        
+        let sut = FizzBuzzApp()
+        
+        let result = sut.print(number: 2)
+        
+        XCTAssertEqual(result, "2")
     }
 
 }
