@@ -12,7 +12,9 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        for i in 1...100 {
+            print(FizzBuzzApp().print(number: i))
+        }
     }
 
     override var representedObject: Any? {

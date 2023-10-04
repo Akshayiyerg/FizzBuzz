@@ -14,6 +14,7 @@
 		BAAD54652ACDFC7000691816 /* FizzBuzzAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAD54642ACDFC7000691816 /* FizzBuzzAppTests.swift */; };
 		BAAD546F2ACDFC7000691816 /* FizzBuzzAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAD546E2ACDFC7000691816 /* FizzBuzzAppUITests.swift */; };
 		BAAD54712ACDFC7000691816 /* FizzBuzzAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAD54702ACDFC7000691816 /* FizzBuzzAppUITestsLaunchTests.swift */; };
+		BAAD54802ACE1F2F00691816 /* FizzBuzzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAD547F2ACE1F2F00691816 /* FizzBuzzApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		BAAD546E2ACDFC7000691816 /* FizzBuzzAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzAppUITests.swift; sourceTree = "<group>"; };
 		BAAD54702ACDFC7000691816 /* FizzBuzzAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BAAD547D2ACDFECD00691816 /* FizzBuzzApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = FizzBuzzApp.xctestplan; sourceTree = "<group>"; };
+		BAAD547F2ACE1F2F00691816 /* FizzBuzzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		BAAD54512ACDFC6D00691816 /* FizzBuzzApp */ = {
 			isa = PBXGroup;
 			children = (
+				BAAD547E2ACE1F0D00691816 /* FizzBuzz Class */,
 				BAAD54522ACDFC6D00691816 /* AppDelegate.swift */,
 				BAAD54542ACDFC6D00691816 /* ViewController.swift */,
 				BAAD54562ACDFC6F00691816 /* Assets.xcassets */,
@@ -121,6 +124,14 @@
 				BAAD54702ACDFC7000691816 /* FizzBuzzAppUITestsLaunchTests.swift */,
 			);
 			path = FizzBuzzAppUITests;
+			sourceTree = "<group>";
+		};
+		BAAD547E2ACE1F0D00691816 /* FizzBuzz Class */ = {
+			isa = PBXGroup;
+			children = (
+				BAAD547F2ACE1F2F00691816 /* FizzBuzzApp.swift */,
+			);
+			path = "FizzBuzz Class";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +266,7 @@
 			files = (
 				BAAD54552ACDFC6D00691816 /* ViewController.swift in Sources */,
 				BAAD54532ACDFC6D00691816 /* AppDelegate.swift in Sources */,
+				BAAD54802ACE1F2F00691816 /* FizzBuzzApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

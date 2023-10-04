@@ -8,21 +8,6 @@
 import XCTest
 @testable import FizzBuzzApp
 
-class FizzBuzzApp {
-    
-    func print(number: Int) -> String {
-        
-        if number.isMultiple(of: 15) {
-            return "FizzBuzz"
-        } else if number.isMultiple(of: 3) {
-            return "Fizz"
-        } else if number.isMultiple(of: 5) {
-            return "Buzz"
-        }
-        return "\(number)"
-    }
-}
-
 final class FizzBuzzAppTests: XCTestCase {
 
     func test_printNumber_One() {
