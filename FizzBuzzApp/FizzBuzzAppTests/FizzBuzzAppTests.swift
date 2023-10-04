@@ -12,7 +12,9 @@ class FizzBuzzApp {
     
     func print(number: Int) -> String {
         
-        if number % 3 == 0 {
+        if number % 15 == 0 {
+            return "FizzBuzz"
+        } else if number % 3 == 0 {
             return "Fizz"
         } else if number % 5 == 0 {
             return "Buzz"
@@ -73,15 +75,26 @@ final class FizzBuzzAppTests: XCTestCase {
             expect(sut: sut, number: elements, withResult: "Buzz")
         }
     }
+    
+    func test_printFizzBuzz_multipleOfThreeAndFive() {
+        
+        let sut = FizzBuzzApp()
+        
+        let multipleFifteen = [15, 30, 45]
+        
+        multipleFifteen.forEach { elements in
+            expect(sut: sut, number: elements, withResult: "FizzBuzz")
+        }
+    }
 
     
     // MARK: Helpers
     
-    func makeSUT() -> FizzBuzzApp {
+    private func makeSUT() -> FizzBuzzApp {
         return FizzBuzzApp()
     }
     
-    func expect(sut: FizzBuzzApp, number: Int, withResult expectedResult: String, file: StaticString = #filePath, line: UInt = #line) {
+    private func expect(sut: FizzBuzzApp, number: Int, withResult expectedResult: String, file: StaticString = #filePath, line: UInt = #line) {
         
         let result = sut.print(number: number)
         
